@@ -3,7 +3,7 @@ function getFormvalue() {
 	const form1=document.getElementById("form1");
 	let first=form1.elements["fname"].value;
      let last=form1.elements["lname"].value;
-	alert(` First Name: ${first}\n Last Name: ${last}`);
+	alert(`${first} ${last}`);
 	
 }
 document.getElementById('submitButton').addEventListener('click', function() {
