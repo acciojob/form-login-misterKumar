@@ -6,6 +6,9 @@ function getFormvalue() {
 	alert(` First Name: ${first}\n Last Name: ${last}`);
 	
 }
+document.getElementById('submitButton').addEventListener('click', function() {
+            this.classList.add('clicked');
+        });
 document.getElementById("form1").addEventListener('submit',function(ev){
 ev.preventDefault();
 	getFormvalue();

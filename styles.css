@@ -1,4 +1,12 @@
 /*  your css code here. If applicable */
-button:active{
-	background-color: aqua;
-}
+ *{
+	 margin: 5px;
+ }
+#submitButton {
+            background-color: initial; /* or any other default background color */
+        }
+
+       
+#submitButton.clicked {
+            background-color: aqua;
+        }
