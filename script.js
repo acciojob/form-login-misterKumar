@@ -1,15 +1,16 @@
-//your JS code here. If required.
-function myfunc(){
-	//get data from form
-	var firstname = document.getElementById("firstname").value;
-	var lastname = document.getElementById("lastname").value;
-	var phonenumber = document.getElementById("phonenumber").value;
-	var email = document.getElementById("email").value;
-	// display popup message
-	var popup = "First Name: " + firstname + "\nLast Name: " + lastname + "\nPhone Number: " + phonenumber + "\nEmail ID: " + email;
-	alert(popup);
-}
-function colorfunc(){
-	var color = document.getElementById("submitbutton").value;
-	color.style.backgroundColor = "Aqua";
-}
+const form = document.querySelector("form");
+
+form.addEventListener("submit", (event) => {
+    event.preventDefault(); // Prevents the default form submission behavior
+
+    // Get form information
+    const formData = new FormData(form);
+    let formInfo = "";
+
+    for (const [key, value] of formData.entries()) {
+        formInfo+=`${key}: ${value}\n`;
+    }
+
+    // Display alert with form information
+    alert(formInfo);
+});

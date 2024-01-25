@@ -7,18 +7,17 @@
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-	<form>
-		<label for="firstname">First Name: </label>
-		<input type="text" id="firstname" name="First Name" required><br>
-		<label for="lastname">Last Name: </label>
-		<input type="text" id="lastname" name="Last Name" required><br>
-		<label for="phonenumber">Phone Number: </label>
-		<input type="number" id="phonenumber" name="Phone Number" required><br>
-		<label for="email">Email ID: </label>
-		<input type="text" id="email" name="Email ID" required><br>
-		<button type="button" id="submitbutton" onclick="myfunc()">Submit</button>
-	</form>
+	<form class="info">
+        <label for="name">First Name:</label>
+        <input type="text" name="First Name" id="fname" required><br>
+        <label for="lname">Last Name:</label>
+        <input type="text" name="Last Name" id="lname" required><br>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" name="Phone Number" id="phone" required><br>
+        <label for="email">Email ID:</label>
+        <input type="email" name="Email ID" id="email" required><br>
+        <input type="submit" value="Submit">
+        </form>
     <script type="text/javascript" src="./script.js">
 </script>
 
